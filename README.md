@@ -1,4 +1,5 @@
 THE WEATHER TELEGRAM-BOT IN PYTHON
+
 import telebot
 from pyowm import OWM
 from pyowm.utils import config
