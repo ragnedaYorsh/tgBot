@@ -8,7 +8,7 @@ config_dict = config.get_default_config_for_subscription_type('professional')
 config_dict['language'] = 'ru' 
 
 owm = OWM('0845827a57a1c6a439ae5c14f31b2ffc', config_dict)
-bot = telebot.TeleBot("5238781398:AAHgviIUkTWcC7BK3DvbFNTplTtF24Rb3gA") # You can set parse_mode by default. HTML or MARKDOWN
+bot = telebot.TeleBot("5238781398:AAHgviIUkTWcC7BK3DvbFNTplTtF24Rb3gA") 
 
 @bot.message_handler(content_types=['text'])
 def send_echo(message):
@@ -30,6 +30,6 @@ def send_echo(message):
     answer += "Вообще заебись...Хоть голым ходи)))"
 
   #bot.reply_to(message, message.text)
-  bot.send_message(message.chat.id,answer) #чтобы бот не пересылал сообщения
+  bot.send_message(message.chat.id,answer) 
 
 bot.polling(none_stop = True)
